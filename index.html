@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Cafe - Premium Coffee Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">☕ Coffee Cafe</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li id="loginLink"><a href="login.html" class="btn-login">Login</a></li>
+                <li id="userProfile" class="user-profile" style="display: none;">
+                    <span class="user-name" id="userName"></span>
+                    <a href="#" onclick="handleLogout()" class="btn-logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Coffee Cafe</h1>
+            <p>Exceptional Coffee, Exceptional Experience</p>
+            <a href="#menu" class="cta-btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <!-- Coffee Items -->
+                <div class="menu-item">
+                    <div class="menu-icon">☕</div>
+                    <h3>Espresso</h3>
+                    <p class="description">Rich and bold, the foundation of all espresso-based drinks</p>
+                    <p class="price">$3.50</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">🥛</div>
+                    <h3>Cappuccino</h3>
+                    <p class="description">Espresso with steamed milk and a layer of foam</p>
+                    <p class="price">$4.50</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">☕</div>
+                    <h3>Latte</h3>
+                    <p class="description">Smooth and creamy, espresso with velvety steamed milk</p>
+                    <p class="price">$4.75</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">🍫</div>
+                    <h3>Mocha</h3>
+                    <p class="description">Espresso, steamed milk, and rich chocolate</p>
+                    <p class="price">$5.00</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">❄️</div>
+                    <h3>Iced Coffee</h3>
+                    <p class="description">Cool and refreshing, perfect for warm days</p>
+                    <p class="price">$4.00</p>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-icon">🥤</div>
+                    <h3>Americano</h3>
+                    <p class="description">Espresso shots topped with hot water</p>
+                    <p class="price">$3.75</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Coffee Cafe</h2>
+            
+            <div class="about-content">
+                <!-- Our Story -->
+                <div class="about-card">
+                    <h3>☕ Our Story</h3>
+                    <p>Coffee Cafe was founded in 2015 with a simple vision: to create a sanctuary for coffee lovers. What started as a small passion project has blossomed into a beloved community gathering space. We believe that great coffee brings people together, and every cup tells a story.</p>
+                </div>
+
+                <!-- Our Mission -->
+                <div class="about-card">
+                    <h3>🎯 Our Mission</h3>
+                    <p>We're dedicated to serving exceptional coffee while building meaningful connections within our community. We source the finest beans from sustainable, ethical farms worldwide and roast them fresh to perfection. Quality isn't just our standard—it's our promise.</p>
+                </div>
+
+                <!-- Our Values -->
+                <div class="about-card">
+                    <h3>💚 Our Values</h3>
+                    <ul class="values-list">
+                        <li><strong>Sustainability:</strong> Ethically sourced beans from fair-trade partners</li>
+                        <li><strong>Quality:</strong> Fresh roasting and meticulous preparation</li>
+                        <li><strong>Community:</strong> A welcoming space for everyone</li>
+                        <li><strong>Innovation:</strong> Always exploring new flavors and techniques</li>
+                    </ul>
+                </div>
+
+                <!-- Our Team -->
+                <div class="about-card">
+                    <h3>👥 Our Team</h3>
+                    <p>Our passionate baristas and staff are coffee enthusiasts dedicated to creating the perfect cup and the perfect experience. With years of experience and endless love for the craft, our team makes every visit special. We're not just serving coffee—we're sharing our passion.</p>
+                </div>
+            </div>
+
+            <!-- Why Choose Us -->
+            <div class="why-choose-us">
+                <h3>Why Choose Coffee Cafe?</h3>
+                <div class="features-grid">
+                    <div class="feature">
+                        <div class="feature-icon">🌱</div>
+                        <h4>Sustainable Sources</h4>
+                        <p>100% ethically sourced coffee beans</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🔥</div>
+                        <h4>Fresh Roasted</h4>
+                        <p>Small-batch roasted daily</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">🎓</div>
+                        <h4>Expert Baristas</h4>
+                        <p>Certified and passionate professionals</p>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon">❤️</div>
+                        <h4>Community First</h4>
+                        <p>Supporting local causes and events</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>📍 Location</h3>
+                    <p>123 Coffee Street<br>Brew City, BC 12345</p>
+                    
+                    <h3>📞 Phone</h3>
+                    <p>(555) 123-4567</p>
+                    
+                    <h3>⏰ Hours</h3>
+                    <p>Mon-Fri: 7 AM - 8 PM<br>Sat-Sun: 8 AM - 9 PM</p>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Coffee Cafe has the best espresso in town! The atmosphere is cozy and the staff is incredibly friendly. I visit almost every day!"</p>
+                    <p class="customer-name">- Sarah Johnson</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Amazing latte art and consistently perfect coffee. The location is perfect for my morning routine. Highly recommended!"</p>
+                    <p class="customer-name">- Michael Chen</p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="rating">★★★★★</div>
+                    <p class="testimonial-text">"Best coffee and pastry combination I've found. The baristas really know their craft. Love supporting this local business!"</p>
+                    <p class="customer-name">- Emily Rodriguez</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Specials Section -->
+    <section id="specials" class="specials">
+        <div class="container">
+            <h2>Seasonal Specials</h2>
+            <div class="specials-grid">
+                <div class="special-item">
+                    <div class="special-icon">🍂</div>
+                    <h3>Fall Flavor</h3>
+                    <p>Maple & Cinnamon Latte</p>
+                    <p class="special-price">$5.50</p>
+                </div>
+
+                <div class="special-item">
+                    <div class="special-icon">❄️</div>
+                    <h3>Winter Wonder</h3>
+                    <p>Peppermint Mocha</p>
+                    <p class="special-price">$5.75</p>
+                </div>
+
+                <div class="special-item">
+                    <div class="special-icon">🌸</div>
+                    <h3>Spring Bloom</h3>
+                    <p>Vanilla & Lavender Latte</p>
+                    <p class="special-price">$5.50</p>
+                </div>
+
+                <div class="special-item">
+                    <div class="special-icon">☀️</div>
+                    <h3>Summer Chill</h3>
+                    <p>Iced Caramel Macchiato</p>
+                    <p class="special-price">$5.25</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Our Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=400&h=300&fit=crop" alt="Cozy Seating">
+                    <h3>Cozy Seating</h3>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=400&h=300&fit=crop" alt="Latte Art">
+                    <h3>Latte Art</h3>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&h=300&fit=crop" alt="Coffee Beans">
+                    <h3>Coffee Beans</h3>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop" alt="Team at Work">
+                    <h3>Team at Work</h3>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=300&fit=crop" alt="Pastries">
+                    <h3>Pastries</h3>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1530299387789-4d1017266635?w=400&h=300&fit=crop" alt="Outdoor Area">
+                    <h3>Outdoor Area</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loyalty Program Section -->
+    <section id="loyalty" class="loyalty">
+        <div class="container">
+            <h2>Join Our Loyalty Program</h2>
+            <div class="loyalty-content">
+                <div class="loyalty-info">
+                    <h3>☕ Earn & Redeem Rewards</h3>
+                    <ul class="loyalty-benefits">
+                        <li>✓ Earn 1 point per $1 spent</li>
+                        <li>✓ 10 points = Free Coffee</li>
+                        <li>✓ Birthday bonus: 50 bonus points</li>
+                        <li>✓ Early access to new specials</li>
+                        <li>✓ Exclusive member discounts</li>
+                    </ul>
+                    <button class="loyalty-btn">Join Now</button>
+                </div>
+                <div class="loyalty-visual">
+                    <div class="loyalty-card-mock">
+                        <p>LOYALTY CARD</p>
+                        <p style="font-size: 2rem; margin: 1rem 0;">☕☕☕☕☕</p>
+                        <p>5 Stamps Earned!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get news about new drinks, special offers, and events</p>
+            <form id="newsletterForm" class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="newsletter-btn">Subscribe</button>
+                <p id="newsletterMessage" class="newsletter-message"></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Coffee Cafe. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
